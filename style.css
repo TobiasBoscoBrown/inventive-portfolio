@@ -958,7 +958,7 @@ a { text-decoration: none; color: inherit; }
 
 .contact-options {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
   margin-bottom: 48px;
 }
@@ -989,9 +989,11 @@ a { text-decoration: none; color: inherit; }
 }
 
 .contact-value {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--text);
+  word-break: break-all;
+  overflow-wrap: anywhere;
 }
 
 .apply-direct {
