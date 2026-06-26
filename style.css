@@ -1,3 +1,42 @@
+/* ===== TEXT ICON OVERRIDES (no emoji) ===== */
+.why-icon-text {
+  font-family: var(--font-display), sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.08em !important;
+  color: var(--orange) !important;
+  border: 2px solid var(--orange) !important;
+  border-radius: 6px !important;
+  padding: 4px 8px !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 40px !important;
+}
+
+.channel-icon.ci {
+  font-family: var(--font-body), sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.06em !important;
+  color: var(--orange) !important;
+  background: rgba(245,98,15,0.12) !important;
+  border: 1px solid rgba(245,98,15,0.3) !important;
+  border-radius: 4px !important;
+  padding: 3px 6px !important;
+  line-height: 1 !important;
+  min-width: 36px !important;
+  text-align: center !important;
+}
+
+.skill-cat-icon.sci {
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  color: var(--orange) !important;
+  font-family: var(--font-body), sans-serif !important;
+}
+
 /* ===== BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
