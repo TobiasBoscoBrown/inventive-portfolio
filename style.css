@@ -971,6 +971,8 @@ a { text-decoration: none; color: inherit; }
   display: flex;
   flex-direction: column;
   gap: 8px;
+  overflow: hidden;
+  min-width: 0;
   transition: border-color var(--transition), transform var(--transition);
 }
 
@@ -989,11 +991,12 @@ a { text-decoration: none; color: inherit; }
 }
 
 .contact-value {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--text);
   word-break: break-all;
   overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .apply-direct {
