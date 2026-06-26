@@ -995,6 +995,209 @@ footer {
   transform: translateY(0);
 }
 
+/* ===== ROADMAP SECTION ===== */
+.accent-dark { color: var(--orange); }
+
+.brand-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  border-bottom: 2px solid var(--light2);
+  padding-bottom: 0;
+}
+
+.brand-tab {
+  background: none;
+  border: none;
+  padding: 14px 24px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark-dim);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: color var(--transition), border-color var(--transition);
+  border-radius: 6px 6px 0 0;
+}
+
+.brand-tab:hover { color: var(--text-dark); }
+
+.brand-tab.active {
+  color: var(--orange);
+  border-bottom-color: var(--orange);
+  background: rgba(245,98,15,0.05);
+}
+
+.brand-roadmap {
+  display: none;
+}
+
+.brand-roadmap.active {
+  display: block;
+  animation: fadeSlideIn 0.3s ease;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.roadmap-header {
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  margin-bottom: 32px;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-left: 5px solid;
+}
+
+.itd-header { background: #fff5f3; border-left-color: #E84C1D; }
+.rbo-header { background: #f3f7ff; border-left-color: #2D7DD2; }
+.ff-header  { background: #f3faf3; border-left-color: #3BAA35; }
+.inv-header { background: #fff8f3; border-left-color: #F5620F; }
+
+.roadmap-brand-info { flex: 1; min-width: 200px; }
+
+.roadmap-brand-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.roadmap-brand-url {
+  font-size: 13px;
+  color: var(--text-dark-dim);
+  font-weight: 500;
+}
+
+.roadmap-verdict {
+  flex: 2;
+  min-width: 280px;
+}
+
+.verdict-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 8px;
+}
+
+.verdict-text {
+  font-size: 15px;
+  color: var(--text-dark);
+  line-height: 1.65;
+}
+
+.roadmap-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.channel-block {
+  background: white;
+  border: 1px solid var(--light2);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: box-shadow var(--transition);
+}
+
+.channel-block:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+}
+
+.channel-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 24px;
+  background: #fafaf8;
+  border-bottom: 1px solid var(--light2);
+  cursor: pointer;
+  user-select: none;
+}
+
+.channel-icon { font-size: 20px; }
+
+.channel-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+  flex: 1;
+}
+
+.channel-priority {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.channel-priority.high {
+  background: var(--orange);
+  color: white;
+}
+
+.channel-priority.medium {
+  background: var(--light2);
+  color: var(--text-dark-dim);
+}
+
+.channel-body {
+  padding: 24px;
+}
+
+.channel-thesis {
+  font-size: 15px;
+  color: var(--text-dark);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background: rgba(245,98,15,0.05);
+  border-left: 3px solid var(--orange);
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+}
+
+.channel-actions {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.channel-actions li {
+  font-size: 15px;
+  color: var(--text-dark-dim);
+  line-height: 1.65;
+  padding-left: 20px;
+  position: relative;
+}
+
+.channel-actions li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.channel-actions li strong {
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
   .portfolio-grid {

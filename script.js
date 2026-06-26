@@ -1,3 +1,15 @@
+// Brand roadmap tab switching
+document.querySelectorAll('.brand-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    const brand = tab.dataset.brand;
+    document.querySelectorAll('.brand-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.brand-roadmap').forEach(r => r.classList.remove('active'));
+    tab.classList.add('active');
+    const target = document.getElementById('brand-' + brand);
+    if (target) target.classList.add('active');
+  });
+});
+
 // Navbar scroll effect
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
